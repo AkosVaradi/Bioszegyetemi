@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins", sans-serif;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(kepek/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-items: center;
+} 
+nav{
+    display: flex;
+    padding: 2% 6%;
+    align-items:center;
+    justify-content: space-between;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding: 8px 40px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+.nav-links ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#d9a8bf;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.nav-links ul li:hover:after{
+    width:100%;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#d9a8bf ; /* Background color for dropdown */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Box shadow for dropdown */
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color:#fff; /* Text color for dropdown options */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+/* Show dropdown content when dropdown is active */
+.dropdown.active .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #b1899c; /* Text color for dropdown options on hover */
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #d9a8bf;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;  
+}
+.button a:link {
+    text-decoration: none;
+  }
+span{
+    background: #d9a8bf;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none;
+}
+
+/*-------------contact us page-----------*/
+.container1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 40px;
+}
+form h3{
+    color:#543749;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+    border-radius: 20px;
+}
+form button{
+    padding: 15px;
+    background:#CAB3CB;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+/*---------aboutus---------*/
+.infos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.box1, .box2, .box3{
+    width: 350px;
+    height:320px;
+    background: radial-gradient(circle at top left, transparent 340px, rgba(255, 255, 255, .3)), radial-gradient(circle at bottom right, transparent 340px, rgba(255, 255, 255, .3));
+    margin: 15px;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color:whitesmoke;
+    text-align: center;
+    transition: .3s ease-in-out ;
+}
+.box1:hover, .box2:hover, .box3:hover{
+    background-color: #d9a8bf;
+}
+.fab{
+    margin: 1.2rem 0.3rem 0;
+}
+h1{
+    letter-spacing: 1px;
+    margin: 0 0 .6rem 0; 
+    padding-top: 15px;
+    
+}
+.box1 p, .box2 p, .box3 p{
+    line-height:1.6;
+    padding: 0 10px;
+}
